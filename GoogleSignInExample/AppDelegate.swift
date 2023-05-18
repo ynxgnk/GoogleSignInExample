@@ -5,15 +5,18 @@
 //  Created by Nazar Kopeyka on 03.05.2023.
 //
 
+import GoogleSignIn /* 3 */
+import Firebase /* 1 */
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDe {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        FirebaseApp.configure() /* 2 */
         return true
     }
 
